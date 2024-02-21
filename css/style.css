@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131313;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.cities {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.empty {
+    width: 490px;
+}
+
+ul {
+    margin-top: 107px;
+    display: flex;
+    list-style: none;
+    font-family: "Yeseva One", serif;
+    gap: 60px;
+}
+
+li {    
+    opacity: 0.3;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+li:hover, li.active {
+    color: #E3B873;
+    opacity: 1;
+    border-bottom: 1px solid #E3B873;
+}
+
+h1, h2 {
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    margin-bottom: 34px;
+}
+
+.title-text {
+    margin-bottom: 42px;
+    font-size: 14px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    margin-bottom: 9px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.apartments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apartments__description {
+    width: 50%;
+    margin-bottom: 34px;
+    display: none;
+}
+
+.apartments__description.active {
+    display: block;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+}
+
+.arrow__left {
+    background-image: url(./image/arrow_left.svg);
+    width: 42px;
+    height: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.arrow__right {
+    background-image: url(./image/arrow_right.svg);
+    width: 42px;
+    height: 14px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.right {
+    width: 679px;
+    height: 483px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
+
+.slider__dots {
+    display: flex;
+    gap: 8px;
+}
+
+.slider__dots-item {
+    width: 9.5px;
+    height: 9.5px;
+    background-color: #fff;
+    margin-right: 18px;
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.slider__dots-item:hover, .slider__dots-item.active {
+    opacity: 1;
+}
